@@ -6,15 +6,21 @@
 #include <fstream>
 #include <cstdlib>
 
+#include "MetodyPomocnicze.h"
+#include "Uzytkownik.h"
 
 using namespace std;
 
 class PlikZUzytkownikami
  {
-     Uzytkownik uzytkownik;
+    string nazwaPlikuZUzytkownikami = "Uzytkownicy.txt";
+    string zamienDaneUzytkownikaNaLinieZDanymiOddzielonaPionowymiKreskami(Uzytkownik uzytkownik);
+    bool czyPlikJestPusty(fstream &plikTekstowy);
+    Uzytkownik pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowymiKreskami);
 
  public:
-     void dopiszUzytkownikaDoPliku();
+    void dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik);
+    vector <Uzytkownik> wczytajUzytkownikowZPliku();
 
  };
 
