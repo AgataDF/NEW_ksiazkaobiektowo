@@ -54,3 +54,78 @@
 	<fstream>
 	<sstream>
 
+1655926381 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.cpp
+	"Adresat.h"
+
+1655926381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.h
+	<iostream>
+
+1655926381 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
+	"AdresatMenedzer.h"
+
+1655926381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+
+1655932621 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1655933056 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedzer.h"
+
+1655931326 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1655928334 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1655928334 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<algorithm>
+
+1655926381 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+	"PlikZAdresatami.h"
+
+1655926381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+
+1655926485 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1655926485 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
+	<iostream>
+
+1655932978 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
+1655933001 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"PlikZUzytkownikami.h"
+
+1655932381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"MetodyPomocnicze.h"
+	"Uzytkownik.h"
+
+1655932621 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
