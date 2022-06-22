@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+	<iostream>
+
+1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<algorithm>
+
+1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+	"PlikZAdresatami.h"
+
+1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+
+1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
+1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+
+1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
+	<iostream>
+
+1655894051 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
+1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+
