@@ -12,7 +12,12 @@ using namespace std;
 
 class UzytkownikMenedzer
  {
+    PlikZUzytkownikami plikZUzytkownikami;
+    vector <Uzytkownik> uzytkownicy;
 
+
+ public:
+    void rejestracjaUzytkownika();
 
  };
 #endif

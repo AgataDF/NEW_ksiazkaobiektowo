@@ -11,7 +11,10 @@ using namespace std;
 
 class PlikZUzytkownikami
  {
+     Uzytkownik uzytkownik;
 
+ public:
+     void dopiszUzytkownikaDoPliku();
 
  };
 
