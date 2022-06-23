@@ -4,3 +4,6 @@
 4|Ela|123|
 5|Robert|123|
 6|Ada|123|
+7|Agata|123|
+8|Teresa|123|
+9|Damian|123|
