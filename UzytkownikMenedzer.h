@@ -28,6 +28,9 @@ class UzytkownikMenedzer
     void wypiszWszystkichUzytkownikow();
     int logowanieUzytkownika();
     void wylogowanieUzytkownika();
+    void zmianaHaslaZalogowanegoUzytkownika();
+    int pobierzIdZalogowanegoUzytkownika();
+    void ustawIdZalogowanegoUzytkownika (int noweId);
  };
 #endif
 
