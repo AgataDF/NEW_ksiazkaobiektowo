@@ -8,9 +8,8 @@ int main()
 {
     KsiazkaAdresowa ksiazkaAdresowa;
 
-    ksiazkaAdresowa.rejestracjaUzytkownika();
-    ksiazkaAdresowa.rejestracjaUzytkownika();
-    ksiazkaAdresowa.rejestracjaUzytkownika();
-
-    cout<<"HELLO"<<endl;
+    //ksiazkaAdresowa.rejestracjaUzytkownika();
+    ksiazkaAdresowa.wypiszWszystkichUzytkownikow();
+    ksiazkaAdresowa.logowanieUzytkownika();
+    ksiazkaAdresowa.wylogowanieUzytkownika();
 }
