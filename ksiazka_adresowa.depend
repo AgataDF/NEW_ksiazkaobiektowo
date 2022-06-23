@@ -70,21 +70,21 @@
 	<fstream>
 	<sstream>
 
-1656015396 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+1656017708 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1656015372 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+1656017708 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 
-1656014853 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
+1656015852 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1656013487 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
+1656015852 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1656013487 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
+1656015852 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -107,10 +107,10 @@
 1655933335 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
 	<iostream>
 
-1656015463 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+1656017708 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1656015416 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+1656017708 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -118,7 +118,7 @@
 	<sstream>
 	"PlikZUzytkownikami.h"
 
-1655933335 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+1656017708 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -126,6 +126,6 @@
 	"MetodyPomocnicze.h"
 	"Uzytkownik.h"
 
-1655933335 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
+1656017725 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
 	"PlikZUzytkownikami.h"
 
