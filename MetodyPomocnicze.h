@@ -17,6 +17,7 @@ class MetodyPomocnicze
  public:
      static string konwerjsaIntNaString(int liczba);
      static string wczytajLinie();
+     static char wczytajZnak();
 
  };
 #endif
