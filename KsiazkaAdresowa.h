@@ -18,6 +18,10 @@ class KsiazkaAdresowa
      void logowanieUzytkownika();
      void wylogowanieUzytkownika();
      void zmianaHasla();
+     char wybierzOpcjeZMenuUzytkownika();
+     char wybierzOpcjeZMenuGlownego();
+     int wczytajIdZalogowanegoUzytkownika();
+     void nadajIdZalogowanegoUzytkownika(int noweId);
 
  };
 #endif
