@@ -84,7 +84,7 @@
 1656273884 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1656273237 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
+1656274077 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -110,7 +110,7 @@
 1656018176 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1656018176 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+1656358706 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -118,7 +118,7 @@
 	<sstream>
 	"PlikZUzytkownikami.h"
 
-1656018176 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+1656358706 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
