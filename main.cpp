@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    KsiazkaAdresowa ksiazkaAdresowa("Uzytkownicy.txt");
+    KsiazkaAdresowa ksiazkaAdresowa; //("Uzytkownicy.txt", "Adresaci.txt");
 
     char wybor;
     while (true)
@@ -22,7 +22,7 @@ int main()
                 break;
             case '2':
                 ksiazkaAdresowa.logowanieUzytkownika();
-                //ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+                ksiazkaAdresowa.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
                 break;
             case '9':
                 exit(0);
@@ -40,7 +40,7 @@ int main()
             switch (wybor)
             {
             case '1':
-                //ksiazkaAdresowa.dodajAdresata();
+                ksiazkaAdresowa.dodajAdresata();
                 break;
             case '2':
                 //wyszukajAdresatowPoImieniu(adresaci);
@@ -49,7 +49,7 @@ int main()
                 //wyszukajAdresatowPoNazwisku(adresaci);
                 break;
             case '4':
-                //ksiazkaAdresowa.wypiszWszystkichAdresatowZalogowanegoUzytkownika();
+                ksiazkaAdresowa.wypiszWszystkichAdresatowZalogowanegoUzytkownika();
                 break;
             case '5':
                 //idUsunietegoAdresata = usunAdresata(adresaci);

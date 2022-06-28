@@ -17,6 +17,7 @@ void KsiazkaAdresowa::logowanieUzytkownika()
 
 void KsiazkaAdresowa::wylogowanieUzytkownika()
 {
+    adresatMenedzer.czyszczenieWektora();
     uzytkownikMenedzer.wylogowanieUzytkownika();
 }
 
@@ -65,12 +66,22 @@ char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
     return wybor;
 }
 
+void KsiazkaAdresowa::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
+{
+    adresatMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+}
+
+void KsiazkaAdresowa::dodajAdresata()
+{
+    adresatMenedzer.dodajAdresata();
+}
+
 int KsiazkaAdresowa::wczytajIdZalogowanegoUzytkownika()
 {
     return uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
 }
 
-void KsiazkaAdresowa::nadajIdZalogowanegoUzytkownika(int noweId)
+void KsiazkaAdresowa::wypiszWszystkichAdresatowZalogowanegoUzytkownika()
 {
-    uzytkownikMenedzer.ustawIdZalogowanegoUzytkownika(noweId);
+    adresatMenedzer.wyswietlWszystkichAdresatow();
 }

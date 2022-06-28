@@ -111,10 +111,9 @@ void UzytkownikMenedzer::wylogowanieUzytkownika()
     idZalogowanegoUzytkownika = 0;
     cout << "Wylogowano poprawnie" << endl << endl;
     system("pause");
-    //adresaci.clear();
 }
 
-//zmiana has³a
+//zmiana hasla
 void UzytkownikMenedzer::zmianaHaslaZalogowanegoUzytkownika()
 {
     string noweHaslo = "";
