@@ -70,18 +70,18 @@
 	<fstream>
 	<sstream>
 
-1656273850 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+1656358706 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1656273850 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+1656358706 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 
-1656273860 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
+1656358706 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1656273884 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
+1656274077 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
 1656274077 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
