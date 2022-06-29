@@ -1,5 +1,10 @@
 #include "AdresatMenedzer.h"
 
+AdresatMenedzer::AdresatMenedzer()
+{
+    idOstatniegoAdresata = (plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci));
+}
+
 int AdresatMenedzer::pobierzIdOstatniegoAdresata()
 {
     return idOstatniegoAdresata;
@@ -30,7 +35,7 @@ Adresat AdresatMenedzer::podajDaneNowegoAdresata()
     Adresat adresat;
 
     adresat.ustawId(++idOstatniegoAdresata);
-    adresat.ustawIdUzytkownika(idZalogowanegoUzytkownika);
+    adresat.ustawIdUzytkownika(uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika());
 
     cout << "Podaj imie: ";
     adresat.ustawImie(MetodyPomocnicze::wczytajLinie());
@@ -50,11 +55,6 @@ Adresat AdresatMenedzer::podajDaneNowegoAdresata()
     adresat.ustawAdres(MetodyPomocnicze::wczytajLinie());
 
     return adresat;
-}
-
-void AdresatMenedzer::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
-{
-    ustawIdOstatniegoAdresata(plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci));
 }
 
 void AdresatMenedzer::wyswietlWszystkichAdresatow()
@@ -86,4 +86,9 @@ void AdresatMenedzer::wyswietlWszystkichAdresatow()
 void AdresatMenedzer::czyszczenieWektora()
 {
     adresaci.clear();
+}
+
+void AdresatMenedzer::wczytajAdresatowZalogowanegoUzytkownikaZPliku()
+{
+    idOstatniegoAdresata = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(adresaci);
 }

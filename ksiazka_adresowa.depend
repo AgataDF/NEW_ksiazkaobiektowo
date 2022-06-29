@@ -60,10 +60,10 @@
 1656448907 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.h
 	<iostream>
 
-1656449789 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
+1656533439 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
-1656449715 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
+1656533416 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -71,15 +71,15 @@
 	<sstream>
 	"PlikZAdresatami.h"
 
-1656449856 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+1656533416 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1656449856 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+1656533416 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 	"AdresatMenedzer.h"
 
-1656449856 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
+1656533416 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
@@ -97,7 +97,7 @@
 1656447134 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
-1656448884 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+1656532819 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -112,10 +112,10 @@
 1655933335 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
 	<iostream>
 
-1656449704 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+1656532819 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1656448543 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+1656532819 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -123,7 +123,7 @@
 	<sstream>
 	"PlikZUzytkownikami.h"
 
-1656448543 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+1656532819 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>

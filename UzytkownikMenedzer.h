@@ -26,6 +26,7 @@ class UzytkownikMenedzer
     void rejestracjaUzytkownika();
     void wczytajUzytkownikowZPliku();
     void wypiszWszystkichUzytkownikow();
+
     int logowanieUzytkownika();
     void wylogowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();

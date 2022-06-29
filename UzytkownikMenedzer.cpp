@@ -111,6 +111,7 @@ void UzytkownikMenedzer::wylogowanieUzytkownika()
     idZalogowanegoUzytkownika = 0;
     cout << "Wylogowano poprawnie" << endl << endl;
     system("pause");
+
 }
 
 //zmiana hasla
