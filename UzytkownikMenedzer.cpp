@@ -111,10 +111,10 @@ void UzytkownikMenedzer::wylogowanieUzytkownika()
     idZalogowanegoUzytkownika = 0;
     cout << "Wylogowano poprawnie" << endl << endl;
     system("pause");
-    //adresaci.clear();
+
 }
 
-//zmiana has³a
+//zmiana hasla
 void UzytkownikMenedzer::zmianaHaslaZalogowanegoUzytkownika()
 {
     string noweHaslo = "";
@@ -139,8 +139,9 @@ int UzytkownikMenedzer::pobierzIdZalogowanegoUzytkownika()
     return idZalogowanegoUzytkownika;
 }
 
-void UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika (int noweId)
+int UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika (int noweId)
 {
     if (noweId >=0)
         idZalogowanegoUzytkownika = noweId;
+        return idZalogowanegoUzytkownika;
 }

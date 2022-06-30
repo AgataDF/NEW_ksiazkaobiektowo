@@ -1,90 +1,17 @@
 # depslib dependency file v1.0
-1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\main.cpp
+1656582399 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
-1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+1656582346 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
 	<iostream>
-
-1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
-	"MetodyPomocnicze.h"
-
-1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
-	<iostream>
-	<vector>
-	<windows.h>
-	<fstream>
-	<sstream>
-	<algorithm>
-
-1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
-	"PlikZAdresatami.h"
-
-1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
-	<iostream>
-	<vector>
-	<fstream>
-	<cstdlib>
-
-1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
-	"PlikZUzytkownikami.h"
-
-1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
-	<iostream>
-	<vector>
-	<fstream>
-	<cstdlib>
-
-1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownik.cpp
-	"Uzytkownik.h"
-
-1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
-	<iostream>
-
-1655894051 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
-	"KsiazkaAdresowa.h"
-
-1655894039 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
-
-1655894039 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
-	<iostream>
-	<vector>
-	<windows.h>
-	<fstream>
-	<sstream>
-
-1655926381 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.cpp
-	"Adresat.h"
-
-1655926381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.h
-	<iostream>
-
-1655926381 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
-1655926381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
-	<iostream>
-	<vector>
-	<windows.h>
-	<fstream>
-	<sstream>
-
-1656273850 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
-	"KsiazkaAdresowa.h"
-
-1656273850 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
-	<iostream>
-	"UzytkownikMenedzer.h"
-
-1656273860 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
-	<iostream>
-	"KsiazkaAdresowa.h"
-
-1656273884 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
+1656569456 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1656274077 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
+1656569456 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -92,14 +19,99 @@
 	<sstream>
 	<algorithm>
 
-1655926381 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+1656578872 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
-1655926381 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+1656582469 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
 	<iostream>
 	<vector>
 	<fstream>
 	<cstdlib>
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+
+1656566674 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+
+1656582399 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"MetodyPomocnicze.h"
+	"Uzytkownik.h"
+
+1655962686 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1655962686 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
+	<iostream>
+
+1656582346 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1656580256 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+	"UzytkownikMenedzer.h"
+
+1656582346 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"PlikZUzytkownikami.h"
+
+1656448907 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.cpp
+	"Adresat.h"
+
+1656448907 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.h
+	<iostream>
+
+1656533439 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
+	"AdresatMenedzer.h"
+
+1656533416 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"PlikZAdresatami.h"
+
+1656533416 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1656533416 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedzer.h"
+	"AdresatMenedzer.h"
+
+1656533416 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+
+1656446960 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1656446960 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	<algorithm>
+
+1656447134 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+	"PlikZAdresatami.h"
+
+1656532819 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+	"UzytkownikMenedzer.h"
 
 1655933335 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.cpp
 	"Uzytkownik.h"
@@ -107,10 +119,10 @@
 1655933335 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
 	<iostream>
 
-1656018176 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+1656532819 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1656358706 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+1656532819 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -118,7 +130,7 @@
 	<sstream>
 	"PlikZUzytkownikami.h"
 
-1656358706 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
+1656532819 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -128,4 +140,21 @@
 
 1656018176 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
 	"PlikZUzytkownikami.h"
+
+1656569456 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\adresat.cpp
+	"Adresat.h"
+
+1656569456 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\adresat.h
+	<iostream>
+
+1656582346 source:c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
+	"AdresatMenedzer.h"
+
+1656582346 c:\users\lenovo\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"PlikZAdresatami.h"
 

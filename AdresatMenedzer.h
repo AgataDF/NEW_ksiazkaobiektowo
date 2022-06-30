@@ -7,11 +7,28 @@
 #include <fstream>
 #include <sstream>
 
+#include "PlikZAdresatami.h"
 
 using namespace std;
 
 class AdresatMenedzer
  {
+    int idOstatniegoAdresata = 0;
+    vector <Adresat> adresaci;
+    PlikZAdresatami plikZAdresatami;
+
+    Adresat podajDaneNowegoAdresata(int idUzytkownika);
+
+public:
+    AdresatMenedzer(string nazwaPlikuZAdresatami):plikZAdresatami(nazwaPlikuZAdresatami){};
+    AdresatMenedzer();
+    int pobierzIdOstatniegoAdresata();
+    void ustawIdOstatniegoAdresata (int noweId);
+    int dodajAdresata(int idUzytkownika);
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
+    void wyswietlWszystkichAdresatow();
+    void czyszczenieWektora();
+
 
  };
 #endif
