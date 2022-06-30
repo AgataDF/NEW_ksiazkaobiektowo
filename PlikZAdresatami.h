@@ -8,16 +8,13 @@
 
 #include "Adresat.h"
 #include "MetodyPomocnicze.h"
-#include "UzytkownikMenedzer.h"
 
 using namespace std;
 
 class PlikZAdresatami
  {
-     string nazwaPlikuZAdresatami = "Adresaci.txt";
+     const string nazwaPlikuZAdresatami;
      string nazwaTymczasowegoPlikuZAdresatami = "Adresaci_tymczasowo.txt";
-     UzytkownikMenedzer uzytkownikMenedzer;
-     int idZalogowanegoUzytkownika = uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
 
      int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
      Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
@@ -26,8 +23,8 @@ class PlikZAdresatami
      string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
 
  public:
-    // PlikZAdresatami(string NAZWAPLIKUZADRESATAMI):nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI){};
-     int wczytajAdresatowZalogowanegoUzytkownikaZPliku(vector <Adresat> &adresaci);
+     PlikZAdresatami(string NAZWAPLIKUZADRESATAMI):nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI){};
+     int wczytajAdresatowZalogowanegoUzytkownikaZPliku(vector <Adresat> &adresaci, int idUzytkownika);
      void dopiszAdresataDoPliku(Adresat adresat);
 
  };

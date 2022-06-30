@@ -16,20 +16,16 @@ class AdresatMenedzer
     int idOstatniegoAdresata = 0;
     vector <Adresat> adresaci;
     PlikZAdresatami plikZAdresatami;
-    UzytkownikMenedzer uzytkownikMenedzer;
-    //int idZalogowanegoUzytkownika = uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
 
-    Adresat podajDaneNowegoAdresata();
-
-
+    Adresat podajDaneNowegoAdresata(int idUzytkownika);
 
 public:
-    //AdresatMenedzer(string nazwaPlikuZAdresatami):plikZAdresatami(nazwaPlikuZAdresatami){};
+    AdresatMenedzer(string nazwaPlikuZAdresatami):plikZAdresatami(nazwaPlikuZAdresatami){};
     AdresatMenedzer();
     int pobierzIdOstatniegoAdresata();
     void ustawIdOstatniegoAdresata (int noweId);
-    int dodajAdresata();
-    void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+    int dodajAdresata(int idUzytkownika);
+    void wczytajAdresatowZalogowanegoUzytkownikaZPliku(int idUzytkownika);
     void wyswietlWszystkichAdresatow();
     void czyszczenieWektora();
 

@@ -12,14 +12,13 @@ class KsiazkaAdresowa
  {
      UzytkownikMenedzer uzytkownikMenedzer;
      AdresatMenedzer adresatMenedzer;
-     void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+     //void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+     int idUzytkownika = 0;
 
  public:
 
-     //KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami):uzytkownikMenedzer(nazwaPlikuZUzytkownikami),adresatMenedzer(nazwaPlikuZAdresatami)
-    KsiazkaAdresowa()//(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami):uzytkownikMenedzer(nazwaPlikuZUzytkownikami)
+     KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami):uzytkownikMenedzer(nazwaPlikuZUzytkownikami),adresatMenedzer(nazwaPlikuZAdresatami)
     {
-        //adresatMenedzer(nazwaPlikuZAdresatami);
         uzytkownikMenedzer.wczytajUzytkownikowZPliku();
     };
      void rejestracjaUzytkownika();
@@ -30,7 +29,7 @@ class KsiazkaAdresowa
      char wybierzOpcjeZMenuUzytkownika();
      char wybierzOpcjeZMenuGlownego();
      int wczytajIdZalogowanegoUzytkownika();
-     //void nadajIdZalogowanegoUzytkownika(int noweId);
+     void ustawIdZalogowanegoUzytkownika();
      void dodajAdresata();
 
      void wypiszWszystkichAdresatowZalogowanegoUzytkownika();

@@ -139,8 +139,9 @@ int UzytkownikMenedzer::pobierzIdZalogowanegoUzytkownika()
     return idZalogowanegoUzytkownika;
 }
 
-void UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika (int noweId)
+int UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika (int noweId)
 {
     if (noweId >=0)
         idZalogowanegoUzytkownika = noweId;
+        return idZalogowanegoUzytkownika;
 }
