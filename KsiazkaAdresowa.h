@@ -12,7 +12,6 @@ class KsiazkaAdresowa
  {
      UzytkownikMenedzer uzytkownikMenedzer;
      AdresatMenedzer adresatMenedzer;
-     //void wczytajAdresatowZalogowanegoUzytkownikaZPliku();
      int idUzytkownika = 0;
 
  public:
@@ -31,7 +30,6 @@ class KsiazkaAdresowa
      int wczytajIdZalogowanegoUzytkownika();
      void ustawIdZalogowanegoUzytkownika();
      void dodajAdresata();
-
      void wypiszWszystkichAdresatowZalogowanegoUzytkownika();
 
  };
