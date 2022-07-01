@@ -53,11 +53,6 @@ bool UzytkownikMenedzer::czyIstniejeLogin(string login)
     }
     return false;
 }
-//wczytywanie
-void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
-{
-    uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
-}
 
 //wypisz wszystkich uzytkownikow
 void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
