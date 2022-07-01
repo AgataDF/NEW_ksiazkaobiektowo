@@ -81,7 +81,7 @@
 1656704292 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1656704532 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+1656706157 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 	"AdresatMenedzer.h"
@@ -101,7 +101,7 @@
 	<sstream>
 	<algorithm>
 
-1656704292 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+1656704903 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
 1656704790 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
