@@ -64,13 +64,13 @@
 1656704292 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.cpp
 	"Adresat.h"
 
-1656704292 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.h
+1657046092 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresat.h
 	<iostream>
 
-1656704292 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
+1657046092 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.cpp
 	"AdresatMenedzer.h"
 
-1656704292 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
+1657041435 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\adresatmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -78,15 +78,15 @@
 	<sstream>
 	"PlikZAdresatami.h"
 
-1656704292 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
+1657046112 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.cpp
 	"KsiazkaAdresowa.h"
 
-1656706157 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
+1657046106 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\ksiazkaadresowa.h
 	<iostream>
 	"UzytkownikMenedzer.h"
 	"AdresatMenedzer.h"
 
-1656704292 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
+1657046092 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\main.cpp
 	<iostream>
 	"KsiazkaAdresowa.h"
 
@@ -101,10 +101,10 @@
 	<sstream>
 	<algorithm>
 
-1656704903 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+1657044183 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
-1656704790 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+1657041435 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -118,10 +118,10 @@
 1655933335 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownik.h
 	<iostream>
 
-1656704532 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
+1657044183 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.cpp
 	"UzytkownikMenedzer.h"
 
-1656704532 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
+1657044200 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\uzytkownikmenedzer.h
 	<iostream>
 	<vector>
 	<windows.h>

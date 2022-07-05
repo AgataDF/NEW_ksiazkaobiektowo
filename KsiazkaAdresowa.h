@@ -13,7 +13,7 @@ class KsiazkaAdresowa
      UzytkownikMenedzer uzytkownikMenedzer;
      AdresatMenedzer *adresatMenedzer;
      const string NAZWA_PLIKU_Z_ADRESATAMI;
-     int idUzytkownika = 0;
+
 
  public:
 
@@ -34,10 +34,9 @@ class KsiazkaAdresowa
      void zmianaHasla();
      char wybierzOpcjeZMenuUzytkownika();
      char wybierzOpcjeZMenuGlownego();
-     int wczytajIdZalogowanegoUzytkownika();
-     void ustawIdZalogowanegoUzytkownika();
      void dodajAdresata();
      void wypiszWszystkichAdresatowZalogowanegoUzytkownika();
-
+     int wczytajIdZalogowanegoUzytkownika();
+     bool czyUzytkownikJestZalogowany();
  };
 #endif

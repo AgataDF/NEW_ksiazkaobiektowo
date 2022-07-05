@@ -11,7 +11,7 @@ int main()
     char wybor;
     while (true)
     {
-        if (ksiazkaAdresowa.wczytajIdZalogowanegoUzytkownika() == 0)
+        if (!ksiazkaAdresowa.czyUzytkownikJestZalogowany())
         {
             wybor = ksiazkaAdresowa.wybierzOpcjeZMenuGlownego();
 
