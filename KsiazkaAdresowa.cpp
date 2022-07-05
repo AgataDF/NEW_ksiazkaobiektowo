@@ -12,14 +12,20 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
-    idUzytkownika = uzytkownikMenedzer.ustawIdZalogowanegoUzytkownika(uzytkownikMenedzer.logowanieUzytkownika());
-    adresatMenedzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idUzytkownika);
+    uzytkownikMenedzer.logowanieUzytkownika();
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer = new AdresatMenedzer(NAZWA_PLIKU_Z_ADRESATAMI, uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika());
+    }
 }
 
 void KsiazkaAdresowa::wylogowanieUzytkownika()
 {
-    adresatMenedzer.czyszczenieWektora();
-    idUzytkownika = 0;
+    uzytkownikMenedzer.wylogowanieUzytkownika();
+    delete adresatMenedzer;
+    adresatMenedzer = NULL;
+    cout << "Wylogowano poprawnie" << endl << endl;
+    system("pause");
 }
 
 void KsiazkaAdresowa::zmianaHasla()
@@ -70,20 +76,36 @@ char KsiazkaAdresowa::wybierzOpcjeZMenuUzytkownika()
 
 void KsiazkaAdresowa::dodajAdresata()
 {
-    adresatMenedzer.dodajAdresata(idUzytkownika);
-}
-
-void KsiazkaAdresowa::ustawIdZalogowanegoUzytkownika()
-{
-    uzytkownikMenedzer.ustawIdZalogowanegoUzytkownika(idUzytkownika);
-}
-
-int KsiazkaAdresowa::wczytajIdZalogowanegoUzytkownika()
-{
-    return idUzytkownika;
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+    adresatMenedzer->dodajAdresata();
+    }
+    else
+    {
+        cout << "Aby dodac adresata, nalezy sie najpierw zalogowac." << endl;
+        system("pause");
+    }
 }
 
 void KsiazkaAdresowa::wypiszWszystkichAdresatowZalogowanegoUzytkownika()
 {
-    adresatMenedzer.wyswietlWszystkichAdresatow();
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+    adresatMenedzer->wyswietlWszystkichAdresatow();
+    }
+    else
+    {
+        cout << "Aby wyswietlic adresatow, nalezy sie najpierw zalogowac." << endl;
+        system("pause");
+    }
+}
+
+int KsiazkaAdresowa::wczytajIdZalogowanegoUzytkownika()
+{
+    return uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
+}
+
+bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
+{
+    uzytkownikMenedzer.czyUzytkownikJestZalogowany();
 }

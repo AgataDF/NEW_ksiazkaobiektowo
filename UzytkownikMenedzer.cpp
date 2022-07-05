@@ -53,11 +53,6 @@ bool UzytkownikMenedzer::czyIstniejeLogin(string login)
     }
     return false;
 }
-//wczytywanie
-void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
-{
-    uzytkownicy = plikZUzytkownikami.wczytajUzytkownikowZPliku();
-}
 
 //wypisz wszystkich uzytkownikow
 void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
@@ -71,7 +66,7 @@ void UzytkownikMenedzer::wypiszWszystkichUzytkownikow()
 }
 
 //logowanie
-int UzytkownikMenedzer::logowanieUzytkownika()
+void UzytkownikMenedzer::logowanieUzytkownika()
 {
     Uzytkownik uzytkownik;
     string login = "", haslo = "";
@@ -79,39 +74,39 @@ int UzytkownikMenedzer::logowanieUzytkownika()
     cout << endl << "Podaj login: ";
     login = MetodyPomocnicze::wczytajLinie();
 
-    for (int i = 0; i < uzytkownicy.size(); i++ )
+    vector <Uzytkownik>::iterator itr = uzytkownicy.begin();
+    while (itr != uzytkownicy.end())
     {
-        if (uzytkownicy[i].pobierzLogin() == login)
+        if (itr -> pobierzLogin() == login)
         {
             for (int iloscProb = 3; iloscProb > 0; iloscProb--)
             {
                 cout << "Podaj haslo. Pozostalo prob: " << iloscProb << ": ";
                 haslo = MetodyPomocnicze::wczytajLinie();
 
-                if (uzytkownicy[i].pobierzHaslo() == haslo)
+                if (itr -> pobierzHaslo() == haslo)
                 {
+                    idZalogowanegoUzytkownika = itr -> pobierzId();
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
-                    return uzytkownicy[i].pobierzId();
+                    return;
                 }
             }
             cout << "Wprowadzono 3 razy bledne haslo." << endl;
             system("pause");
-            return 0;
+            return;
         }
+        itr++;
     }
     cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
     system("pause");
-    return 0;
+    return;
 }
 
 //wylogowanie
 void UzytkownikMenedzer::wylogowanieUzytkownika()
 {
     idZalogowanegoUzytkownika = 0;
-    cout << "Wylogowano poprawnie" << endl << endl;
-    system("pause");
-
 }
 
 //zmiana hasla
@@ -138,10 +133,15 @@ int UzytkownikMenedzer::pobierzIdZalogowanegoUzytkownika()
 {
     return idZalogowanegoUzytkownika;
 }
-
-int UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika (int noweId)
+void UzytkownikMenedzer::ustawIdZalogowanegoUzytkownika(int noweId)
 {
-    if (noweId >=0)
         idZalogowanegoUzytkownika = noweId;
-        return idZalogowanegoUzytkownika;
+}
+
+bool UzytkownikMenedzer::czyUzytkownikJestZalogowany()
+{
+    if (idZalogowanegoUzytkownika > 0)
+        return true;
+    else
+        return false;
 }
