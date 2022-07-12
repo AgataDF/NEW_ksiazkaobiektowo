@@ -109,3 +109,29 @@ bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
 {
     uzytkownikMenedzer.czyUzytkownikJestZalogowany();
 }
+
+void KsiazkaAdresowa::wyszukajAdresatowPoImieniu()
+{
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+    adresatMenedzer->wyszukajAdresatowPoImieniu();
+    }
+    else
+    {
+        cout << "Aby wyswietlic adresatow, nalezy sie najpierw zalogowac." << endl;
+        system("pause");
+    }
+}
+
+void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
+{
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+    adresatMenedzer->wyszukajAdresatowPoNazwisku();
+    }
+    else
+    {
+        cout << "Aby wyswietlic adresatow, nalezy sie najpierw zalogowac." << endl;
+        system("pause");
+    }
+}

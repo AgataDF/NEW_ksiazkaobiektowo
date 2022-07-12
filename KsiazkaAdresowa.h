@@ -38,5 +38,8 @@ class KsiazkaAdresowa
      void wypiszWszystkichAdresatowZalogowanegoUzytkownika();
      int wczytajIdZalogowanegoUzytkownika();
      bool czyUzytkownikJestZalogowany();
+     void wyszukajAdresatowPoImieniu();
+     void wyszukajAdresatowPoNazwisku();
+
  };
 #endif
