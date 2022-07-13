@@ -144,3 +144,8 @@ void AdresatMenedzer::wyszukajAdresatowPoNazwisku()
     cout << endl;
     system("pause");
 }
+
+void AdresatMenedzer::usunAdresata()
+{
+    adresaci = plikZAdresatami.usunAdresata(adresaci);
+}
