@@ -41,5 +41,6 @@ class KsiazkaAdresowa
      void wyszukajAdresatowPoImieniu();
      void wyszukajAdresatowPoNazwisku();
      void usunAdresata();
+     void edytujAdresata();
  };
 #endif

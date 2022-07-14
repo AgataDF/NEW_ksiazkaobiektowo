@@ -147,5 +147,21 @@ void AdresatMenedzer::wyszukajAdresatowPoNazwisku()
 
 void AdresatMenedzer::usunAdresata()
 {
-    adresaci = plikZAdresatami.usunAdresata(adresaci);
+    int idUsuwanegoAdresata = plikZAdresatami.usunAdresata(adresaci);
+    if (idUsuwanegoAdresata > 0)
+    {
+        adresaci.clear();
+        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
+    }
+}
+
+void AdresatMenedzer::edytujAdresata()
+{
+    //int idEdytowanegoAdresata =
+    plikZAdresatami.edytujAdresata(adresaci);
+    /*if (idEdytowanegoAdresata > 0)
+    {
+        adresaci.clear();
+        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
+    }*/
 }
