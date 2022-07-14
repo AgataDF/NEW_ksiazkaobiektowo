@@ -46,7 +46,7 @@ class PlikZAdresatami
     bool dopiszAdresataDoPliku(Adresat adresat);
     int pobierzIdOstatniegoAdresata();
     int usunAdresata(vector <Adresat> adresaci);
-    void edytujAdresata(vector <Adresat> &adresaci);
+    int edytujAdresata(vector <Adresat> &adresaci);
 
  };
 

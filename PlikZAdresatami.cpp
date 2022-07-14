@@ -304,7 +304,7 @@ int PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
     return idOstatniegoAdresata;
 }
 
-void PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
+int PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
 {
     system("cls");
     Adresat adresat;
@@ -321,16 +321,20 @@ void PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
     {
         if (adresaci[i].pobierzId() == idEdytowanegoAdresata)
         {
+            cout<<idEdytowanegoAdresata<<endl;
             czyIstniejeAdresat = true;
             wybor = wybierzOpcjeZMenuEdycja();
 
             switch (wybor)
             {
             case '1':
+                {
                 cout << "Podaj nowe imie: ";
                 adresat.ustawImie(MetodyPomocnicze::wczytajLinie());
                 adresat.ustawImie(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(adresat.pobierzImie()));
                 zaktualizujDaneWybranegoAdresata(adresaci[i]);
+                }
+
                 break;
             case '2':
                 cout << "Podaj nowe nazwisko: ";
@@ -360,11 +364,13 @@ void PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
                 cout << endl << "Nie ma takiej opcji w menu! Powrot do menu uzytkownika." << endl << endl;
                 break;
             }
+            return idEdytowanegoAdresata;
         }
     }
     if (czyIstniejeAdresat == false)
     {
         cout << endl << "Nie ma takiego adresata." << endl << endl;
+        return 0;
     }
     system("pause");
 }
@@ -392,6 +398,9 @@ void PlikZAdresatami::zaktualizujDaneWybranegoAdresata(Adresat adresat)
 {
     int numerLiniiEdytowanegoAdresata = 0;
     string liniaZDanymiAdresata = "";
+
+cout<<idEdytowanegoAdresata<<endl;
+system("pause");
 
     numerLiniiEdytowanegoAdresata = zwrocNumerLiniiSzukanegoAdresata(idEdytowanegoAdresata);
     liniaZDanymiAdresata = zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(adresat);

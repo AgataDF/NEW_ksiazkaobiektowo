@@ -157,11 +157,10 @@ void AdresatMenedzer::usunAdresata()
 
 void AdresatMenedzer::edytujAdresata()
 {
-    //int idEdytowanegoAdresata =
-    plikZAdresatami.edytujAdresata(adresaci);
-    /*if (idEdytowanegoAdresata > 0)
+    int idEdytowanegoAdresata = plikZAdresatami.edytujAdresata(adresaci);
+    if (idEdytowanegoAdresata > 0)
     {
         adresaci.clear();
         adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
-    }*/
+    }
 }
