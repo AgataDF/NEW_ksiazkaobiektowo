@@ -333,7 +333,6 @@ int PlikZAdresatami::edytujAdresata(vector <Adresat> adresaci)
                 {
                 adresat = adresaci[i];
                 cout << "Podaj nowe imie: ";
-                //adresat.ustawImie(MetodyPomocnicze::wczytajLinie());
                 adresat.ustawImie(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(MetodyPomocnicze::wczytajLinie()));
                 zaktualizujDaneWybranegoAdresata(adresat);
                 }
@@ -342,8 +341,7 @@ int PlikZAdresatami::edytujAdresata(vector <Adresat> adresaci)
             case '2':
                 cout << "Podaj nowe nazwisko: ";
                 adresat = adresaci[i];
-                adresat.ustawNazwisko(MetodyPomocnicze::wczytajLinie());
-                adresat.ustawNazwisko(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(adresat.pobierzNazwisko()));
+                adresat.ustawNazwisko(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(MetodyPomocnicze::wczytajLinie()));
                 zaktualizujDaneWybranegoAdresata(adresat);
                 break;
             case '3':
