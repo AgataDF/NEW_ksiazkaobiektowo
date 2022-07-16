@@ -304,12 +304,14 @@ int PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
     return idOstatniegoAdresata;
 }
 
-int PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
+int PlikZAdresatami::edytujAdresata(vector <Adresat> adresaci)
 {
     system("cls");
     Adresat adresat;
+    Adresat pomoc;
     int numerLiniiEdytowanegoAdresata = 0;
     string liniaZDanymiAdresata = "";
+    string linia;
 
     cout << ">>> EDYCJA WYBRANEGO ADRESATA <<<" << endl << endl;
     idEdytowanegoAdresata = podajIdWybranegoAdresata();
@@ -329,39 +331,46 @@ int PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
             {
             case '1':
                 {
+                adresat = adresaci[i];
                 cout << "Podaj nowe imie: ";
-                adresat.ustawImie(MetodyPomocnicze::wczytajLinie());
-                adresat.ustawImie(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(adresat.pobierzImie()));
-                zaktualizujDaneWybranegoAdresata(adresaci[i]);
+                //adresat.ustawImie(MetodyPomocnicze::wczytajLinie());
+                adresat.ustawImie(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(MetodyPomocnicze::wczytajLinie()));
+                zaktualizujDaneWybranegoAdresata(adresat);
                 }
 
                 break;
             case '2':
                 cout << "Podaj nowe nazwisko: ";
+                adresat = adresaci[i];
                 adresat.ustawNazwisko(MetodyPomocnicze::wczytajLinie());
                 adresat.ustawNazwisko(MetodyPomocnicze::zamienPierwszaLitereNaDuzaAPozostaleNaMale(adresat.pobierzNazwisko()));
-                zaktualizujDaneWybranegoAdresata(adresaci[i]);
+                zaktualizujDaneWybranegoAdresata(adresat);
                 break;
             case '3':
                 cout << "Podaj nowy numer telefonu: ";
+                adresat = adresaci[i];
                 adresat.ustawNumerTelefonu(MetodyPomocnicze::wczytajLinie());
-                zaktualizujDaneWybranegoAdresata(adresaci[i]);
+                zaktualizujDaneWybranegoAdresata(adresat);
                 break;
             case '4':
                 cout << "Podaj nowy email: ";
+                adresat = adresaci[i];
                 adresat.ustawEmail(MetodyPomocnicze::wczytajLinie());
-                zaktualizujDaneWybranegoAdresata(adresaci[i]);
+                zaktualizujDaneWybranegoAdresata(adresat);
                 break;
             case '5':
                 cout << "Podaj nowy adres zamieszkania: ";
+                adresat = adresaci[i];
                 adresat.ustawAdres(MetodyPomocnicze::wczytajLinie());
-                zaktualizujDaneWybranegoAdresata(adresaci[i]);
+                zaktualizujDaneWybranegoAdresata(adresat);
                 break;
             case '6':
                 cout << endl << "Powrot do menu uzytkownika" << endl << endl;
+                system("pause");
                 break;
             default:
                 cout << endl << "Nie ma takiej opcji w menu! Powrot do menu uzytkownika." << endl << endl;
+                system("pause");
                 break;
             }
             return idEdytowanegoAdresata;
@@ -370,6 +379,7 @@ int PlikZAdresatami::edytujAdresata(vector <Adresat> &adresaci)
     if (czyIstniejeAdresat == false)
     {
         cout << endl << "Nie ma takiego adresata." << endl << endl;
+        system("pause");
         return 0;
     }
     system("pause");
@@ -399,14 +409,11 @@ void PlikZAdresatami::zaktualizujDaneWybranegoAdresata(Adresat adresat)
     int numerLiniiEdytowanegoAdresata = 0;
     string liniaZDanymiAdresata = "";
 
-cout<<idEdytowanegoAdresata<<endl;
-system("pause");
-
     numerLiniiEdytowanegoAdresata = zwrocNumerLiniiSzukanegoAdresata(idEdytowanegoAdresata);
     liniaZDanymiAdresata = zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(adresat);
     edytujWybranaLinieWPliku(numerLiniiEdytowanegoAdresata, liniaZDanymiAdresata);
-
     cout << endl << "Dane zostaly zaktualizowane." << endl << endl;
+    system("pause");
 }
 
 void PlikZAdresatami::edytujWybranaLinieWPliku(int numerEdytowanejLinii, string liniaZDanymiAdresataOddzielonePionowymiKreskami)
