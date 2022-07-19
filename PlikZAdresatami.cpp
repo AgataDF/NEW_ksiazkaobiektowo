@@ -165,8 +165,8 @@ int PlikZAdresatami::usunAdresata(vector <Adresat> adresaci)
             znak = MetodyPomocnicze::wczytajZnak();
             if (znak == 't')
             {
-                numerLiniiUsuwanegoAdresata = zwrocNumerLiniiSzukanegoAdresata(idUsunietegoAdresata);
-                usunWybranaLinieWPliku(numerLiniiUsuwanegoAdresata);
+                //numerLiniiUsuwanegoAdresata = zwrocNumerLiniiSzukanegoAdresata(idUsunietegoAdresata);
+                usunWybranaLinieWPliku();
                 podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata();
                 cout << endl << endl << "Szukany adresat zostal USUNIETY" << endl << endl;
                 system("pause");
@@ -226,23 +226,44 @@ int PlikZAdresatami::zwrocNumerLiniiSzukanegoAdresata(int idAdresata)
     return 0;
 }
 
-void PlikZAdresatami::usunWybranaLinieWPliku(int numerUsuwanejLinii)
+void PlikZAdresatami::usunWybranaLinieWPliku()
 {
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
-    string wczytanaLinia = "";
     int numerWczytanejLinii = 1;
+    string daneJednegoAdresataOddzielonePionowymiKreskami = "";
 
     odczytywanyPlikTekstowy.open(NAZWA_PLIKU_Z_ADRESATAMI.c_str(), ios::in);
     tymczasowyPlikTekstowy.open(nazwaTymczasowegoPlikuZAdresatami.c_str(), ios::out | ios::app);
 
-    if (odczytywanyPlikTekstowy.good() == true && numerUsuwanejLinii != 0)
+    if (odczytywanyPlikTekstowy.good() == true && idUsunietegoAdresata != 0)
     {
-        while (getline(odczytywanyPlikTekstowy, wczytanaLinia))
+        while (getline(odczytywanyPlikTekstowy, daneJednegoAdresataOddzielonePionowymiKreskami))
         {
-            // Tych przypadkow jest tyle, gdyz chcemy osiagnac taki efekt,
-            // aby na koncu pliku nie bylo pustej linii
-            if (numerWczytanejLinii == numerUsuwanejLinii) {}
-            else if (numerWczytanejLinii == 1 && numerWczytanejLinii != numerUsuwanejLinii)
+            int numerUsunietejLinii;
+            int idAdresataWPliku = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneJednegoAdresataOddzielonePionowymiKreskami);
+            if(idUsunietegoAdresata == idAdresataWPliku)
+            {numerUsunietejLinii = numerWczytanejLinii;}
+            else if (idUsunietegoAdresata != idAdresataWPliku && numerWczytanejLinii == 1)
+                tymczasowyPlikTekstowy << daneJednegoAdresataOddzielonePionowymiKreskami;
+            else if (numerWczytanejLinii == 2 && numerUsunietejLinii == 1)
+                tymczasowyPlikTekstowy << daneJednegoAdresataOddzielonePionowymiKreskami;
+            else if (idUsunietegoAdresata != idAdresataWPliku && numerWczytanejLinii > 1)
+                tymczasowyPlikTekstowy << endl << daneJednegoAdresataOddzielonePionowymiKreskami;
+
+
+            numerWczytanejLinii++;
+                /*if (idUsunietegoAdresata == idAdresataWPliku) {}
+            else if (numerWczytanejLinii == 1 && idUsunietegoAdresata != idAdresataWPliku)
+                tymczasowyPlikTekstowy << dane;
+            else if (numerWczytanejLinii == 2 && numerUsuwanejLinii == 1)
+                tymczasowyPlikTekstowy << wczytanaLinia;
+            else if (numerWczytanejLinii > 2 && numerUsuwanejLinii == 1)
+                tymczasowyPlikTekstowy << endl << wczytanaLinia;
+            else if (numerWczytanejLinii > 1 && numerUsuwanejLinii != 1)
+                tymczasowyPlikTekstowy << endl << wczytanaLinia;
+            numerWczytanejLinii++;*/
+
+            /*else if (numerWczytanejLinii == 1 && numerWczytanejLinii != numerUsuwanejLinii)
                 tymczasowyPlikTekstowy << wczytanaLinia;
             else if (numerWczytanejLinii == 2 && numerUsuwanejLinii == 1)
                 tymczasowyPlikTekstowy << wczytanaLinia;
@@ -250,7 +271,7 @@ void PlikZAdresatami::usunWybranaLinieWPliku(int numerUsuwanejLinii)
                 tymczasowyPlikTekstowy << endl << wczytanaLinia;
             else if (numerWczytanejLinii > 1 && numerUsuwanejLinii != 1)
                 tymczasowyPlikTekstowy << endl << wczytanaLinia;
-            numerWczytanejLinii++;
+            numerWczytanejLinii++;*/
         }
         odczytywanyPlikTekstowy.close();
         tymczasowyPlikTekstowy.close();

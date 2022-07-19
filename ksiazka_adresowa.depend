@@ -16,7 +16,7 @@
 	<sstream>
 	"PlikZAdresatami.h"
 
-1657989021 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
+1658260076 c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.h
 	<iostream>
 	<vector>
 	<fstream>
@@ -66,7 +66,7 @@
 1657659246 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\metodypomocnicze.cpp
 	"MetodyPomocnicze.h"
 
-1657989006 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
+1658260716 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzadresatami.cpp
 	"PlikZAdresatami.h"
 
 1657046356 source:c:\users\agata\desktop\inne\new_ksiazkaobiektowo\plikzuzytkownikami.cpp
