@@ -135,3 +135,29 @@ void KsiazkaAdresowa::wyszukajAdresatowPoNazwisku()
         system("pause");
     }
 }
+
+void KsiazkaAdresowa::usunAdresata()
+{
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+    adresatMenedzer->usunAdresata();
+    }
+    else
+    {
+        cout << "Aby usunac adresata, nalezy sie najpierw zalogowac." << endl;
+        system("pause");
+    }
+}
+
+void KsiazkaAdresowa::edytujAdresata()
+{
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+    adresatMenedzer->edytujAdresata();
+    }
+    else
+    {
+        cout << "Aby edytowac adresata, nalezy sie najpierw zalogowac." << endl;
+        system("pause");
+    }
+}

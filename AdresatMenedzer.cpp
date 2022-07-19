@@ -144,3 +144,23 @@ void AdresatMenedzer::wyszukajAdresatowPoNazwisku()
     cout << endl;
     system("pause");
 }
+
+void AdresatMenedzer::usunAdresata()
+{
+    int idUsuwanegoAdresata = plikZAdresatami.usunAdresata(adresaci);
+    if (idUsuwanegoAdresata > 0)
+    {
+        adresaci.clear();
+        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
+    }
+}
+
+void AdresatMenedzer::edytujAdresata()
+{
+    int idEdytowanegoAdresata = plikZAdresatami.edytujAdresata(adresaci);
+    if (idEdytowanegoAdresata > 0)
+    {
+        adresaci.clear();
+        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
+    }
+}
