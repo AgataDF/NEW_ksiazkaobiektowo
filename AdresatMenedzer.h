@@ -14,6 +14,8 @@ using namespace std;
 class AdresatMenedzer
  {
     const int ID_ZALOGOWANEGO_UZYTKOWNIKA;
+    int idUsunietegoAdresata;
+    int idEdytowanegoAdresata;
 
     vector <Adresat> adresaci;
     PlikZAdresatami plikZAdresatami;
@@ -21,6 +23,8 @@ class AdresatMenedzer
     Adresat podajDaneNowegoAdresata();
     void wyswietlDaneAdresata(Adresat adresat);
     void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
+    int podajIdWybranegoAdresata();
+    char wybierzOpcjeZMenuEdycja();
 
 public:
     AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)
@@ -32,9 +36,8 @@ public:
     void wyswietlWszystkichAdresatow();
     void wyszukajAdresatowPoNazwisku();
     void wyszukajAdresatowPoImieniu();
-    void usunAdresata();
     void edytujAdresata();
-
+    void usunAdresata();
 
  };
 #endif

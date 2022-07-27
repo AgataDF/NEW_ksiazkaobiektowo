@@ -14,41 +14,32 @@ using namespace std;
 
 class PlikZAdresatami : public PlikTekstowy
  {
-    //const string NAZWA_PLIKU_Z_ADRESATAMI;
     string nazwaTymczasowegoPlikuZAdresatami = "Adresaci_tymczasowo.txt";
     int idOstatniegoAdresata;
-    int idUsunietegoAdresata;
-    int idEdytowanegoAdresata;
+
 
     int pobierzIdUzytkownikaZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
     Adresat pobierzDaneAdresata(string daneAdresataOddzielonePionowymiKreskami);
     int pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(string daneJednegoAdresataOddzielonePionowymiKreskami);
-    //bool czyPlikJestPusty(fstream &plikTekstowy);
     string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
-    int podajIdWybranegoAdresata();
-    int zwrocNumerLiniiSzukanegoAdresata(int idAdresata);
-    void usunWybranaLinieWPliku();
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
-    int pobierzZPlikuIdOstatniegoAdresata();
-    void podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata();
-    char wybierzOpcjeZMenuEdycja();
-    void zaktualizujDaneWybranegoAdresata(Adresat adresat);
-    void edytujWybranaLinieWPliku(string liniaZDanymiAdresataOddzielonePionowymiKreskami);
+
+    void podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsunietegoAdresata);
 
  public:
     PlikZAdresatami(string nazwaPliku) : PlikTekstowy(nazwaPliku)
     {
     idOstatniegoAdresata = 0;
-    idUsunietegoAdresata = 0;
-    idEdytowanegoAdresata = 0;
     }
     vector <Adresat> wczytajAdresatowZalogowanegoUzytkownikaZPliku( int idUzytkownika);
     bool dopiszAdresataDoPliku(Adresat adresat);
-    int pobierzIdOstatniegoAdresata();
-    int usunAdresata(vector <Adresat> adresaci);
-    int edytujAdresata(vector <Adresat> adresaci);
 
+    int pobierzIdOstatniegoAdresata();
+    void usunWybranaLinieWPliku(int idUsunietegoAdresata);
+    int pobierzZPlikuIdOstatniegoAdresata();
+    void zaktualizujDaneWybranegoAdresata(Adresat adresat);
+    void edytujWybranaLinieWPliku(Adresat adresat, int idEdytowanegoAdresata);
  };
 
 #endif
