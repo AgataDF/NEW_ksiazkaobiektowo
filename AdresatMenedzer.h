@@ -25,6 +25,7 @@ class AdresatMenedzer
     void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
     int podajIdWybranegoAdresata();
     char wybierzOpcjeZMenuEdycja();
+    void podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata();
 
 public:
     AdresatMenedzer(string nazwaPlikuZAdresatami, int idZalogowanegoUzytkownika)

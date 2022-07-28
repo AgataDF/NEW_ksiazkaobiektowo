@@ -164,8 +164,9 @@ void AdresatMenedzer::usunAdresata()
             znak = MetodyPomocnicze::wczytajZnak();
             if (znak == 't')
             {
-                adresaci.erase(itr);
                 plikZAdresatami.usunWybranaLinieWPliku(idUsunietegoAdresata);
+                adresaci.erase(itr);
+                podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata();
                 cout << endl << endl << "Szukany adresat zostal USUNIETY" << endl << endl;
                 system("pause");
             }
@@ -181,6 +182,23 @@ void AdresatMenedzer::usunAdresata()
         cout << endl << "Nie ma takiego adresata w ksiazce adresowej" << endl << endl;
         system("pause");
     }
+}
+
+void AdresatMenedzer::podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata()
+{
+    if (idUsunietegoAdresata == plikZAdresatami.pobierzIdOstatniegoAdresata())
+    {
+        plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata();
+        /////
+        cout << "Ostatnie id to: "<<plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() << endl;
+        system ("pause");
+    }
+    else
+    {
+        cout << "Ostatnie id to: "<<plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() << endl;
+        system ("pause");
+    }
+//////////////
 }
 
 int AdresatMenedzer::podajIdWybranegoAdresata()
