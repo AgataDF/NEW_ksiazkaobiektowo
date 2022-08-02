@@ -189,16 +189,7 @@ void AdresatMenedzer::podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata()
     if (idUsunietegoAdresata == plikZAdresatami.pobierzIdOstatniegoAdresata())
     {
         plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata();
-        /////
-        cout << "Ostatnie id to: "<<plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() << endl;
-        system ("pause");
     }
-    else
-    {
-        cout << "Ostatnie id to: "<<plikZAdresatami.pobierzZPlikuIdOstatniegoAdresata() << endl;
-        system ("pause");
-    }
-//////////////
 }
 
 int AdresatMenedzer::podajIdWybranegoAdresata()

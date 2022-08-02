@@ -25,7 +25,7 @@ class PlikZAdresatami : public PlikTekstowy
     void usunPlik(string nazwaPlikuZRozszerzeniem);
     void zmienNazwePliku(string staraNazwa, string nowaNazwa);
 
-    void podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsunietegoAdresata);
+    //void podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsunietegoAdresata);
 
  public:
     PlikZAdresatami(string nazwaPliku) : PlikTekstowy(nazwaPliku)
