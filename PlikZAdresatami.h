@@ -37,7 +37,7 @@ class PlikZAdresatami : public PlikTekstowy
 
     int pobierzIdOstatniegoAdresata();
     void usunWybranaLinieWPliku(int idUsunietegoAdresata);
-    int pobierzZPlikuIdOstatniegoAdresata();
+    void pobierzZPlikuIdOstatniegoAdresata();
     void zaktualizujDaneWybranegoAdresata(Adresat adresat);
     void edytujWybranaLinieWPliku(Adresat adresat, int idEdytowanegoAdresata);
  };

@@ -140,6 +140,7 @@ void PlikZAdresatami::usunWybranaLinieWPliku(int idUsunietegoAdresata)
 {
     fstream odczytywanyPlikTekstowy, tymczasowyPlikTekstowy;
     int numerWczytanejLinii = 1;
+    int numerUsunietejLinii = 0;
     string wczytanaLinia = "";
     int idAdresataWPliku;
 
@@ -150,18 +151,25 @@ void PlikZAdresatami::usunWybranaLinieWPliku(int idUsunietegoAdresata)
     {
         while (getline(odczytywanyPlikTekstowy, wczytanaLinia))
         {
+
             idAdresataWPliku = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(wczytanaLinia);
 
-             if (idAdresataWPliku == idUsunietegoAdresata) {}
-            else if (idAdresataWPliku == 1 && idUsunietegoAdresata != 1) //warunek przy idUsunietegoAdresata!=1
+             if (idAdresataWPliku == idUsunietegoAdresata) {numerUsunietejLinii = numerWczytanejLinii;}
+            else if (numerWczytanejLinii == 1 && numerWczytanejLinii != numerUsunietejLinii)
                 tymczasowyPlikTekstowy << wczytanaLinia;
-            else if (idAdresataWPliku == 2 && idUsunietegoAdresata == 1) //kiedy idUsunietegoAdresata==1, pierwsza linijka
+            else if (numerWczytanejLinii == 2 && numerUsunietejLinii == 1)
                 tymczasowyPlikTekstowy << wczytanaLinia;
-            else if (idAdresataWPliku > 2 && idUsunietegoAdresata == 1) //kiedy idUsunietegoAdresata ==1 kolejne linijki
+            else if (numerWczytanejLinii == 2 && idUsunietegoAdresata == 1)
+                tymczasowyPlikTekstowy << wczytanaLinia;
+            else if (numerWczytanejLinii == 2 && numerUsunietejLinii > 1)
                 tymczasowyPlikTekstowy << endl << wczytanaLinia;
-            else if (idAdresataWPliku > 1 && idUsunietegoAdresata != 1) //kiedy idUsunietegoAdresata !=1 kolejne linijki
+            else if (numerWczytanejLinii > 2 && idUsunietegoAdresata == 1)
                 tymczasowyPlikTekstowy << endl << wczytanaLinia;
+            else if (numerWczytanejLinii > 1 && idUsunietegoAdresata != 1)
+                tymczasowyPlikTekstowy << endl << wczytanaLinia;
+
             numerWczytanejLinii++;
+
         }
         odczytywanyPlikTekstowy.close();
         tymczasowyPlikTekstowy.close();
@@ -185,9 +193,8 @@ void PlikZAdresatami::zmienNazwePliku(string staraNazwa, string nowaNazwa)
         cout << "Nazwa pliku nie zostala zmieniona." << staraNazwa << endl;
 }
 
-int PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
+void PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
 {
-    int idOstatniegoAdresata = 0;
     string daneJednegoAdresataOddzielonePionowymiKreskami = "";
     string daneOstaniegoAdresataWPliku = "";
     fstream plikTekstowy;
@@ -206,7 +213,6 @@ int PlikZAdresatami::pobierzZPlikuIdOstatniegoAdresata()
     {
         idOstatniegoAdresata = pobierzIdAdresataZDanychOddzielonychPionowymiKreskami(daneOstaniegoAdresataWPliku);
     }
-    return idOstatniegoAdresata;
 }
 
 void PlikZAdresatami::edytujWybranaLinieWPliku(Adresat adresat, int idEdytowanegoAdresata)
