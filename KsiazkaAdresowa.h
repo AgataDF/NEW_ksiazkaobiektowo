@@ -36,7 +36,6 @@ class KsiazkaAdresowa
      char wybierzOpcjeZMenuGlownego();
      void dodajAdresata();
      void wypiszWszystkichAdresatowZalogowanegoUzytkownika();
-     int wczytajIdZalogowanegoUzytkownika();
      bool czyUzytkownikJestZalogowany();
      void wyszukajAdresatowPoImieniu();
      void wyszukajAdresatowPoNazwisku();

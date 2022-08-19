@@ -100,11 +100,6 @@ void KsiazkaAdresowa::wypiszWszystkichAdresatowZalogowanegoUzytkownika()
     }
 }
 
-int KsiazkaAdresowa::wczytajIdZalogowanegoUzytkownika()
-{
-    return uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika();
-}
-
 bool KsiazkaAdresowa::czyUzytkownikJestZalogowany()
 {
     uzytkownikMenedzer.czyUzytkownikJestZalogowany();

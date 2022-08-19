@@ -15,7 +15,6 @@ class AdresatMenedzer
  {
     const int ID_ZALOGOWANEGO_UZYTKOWNIKA;
 
-
     vector <Adresat> adresaci;
     PlikZAdresatami plikZAdresatami;
 
