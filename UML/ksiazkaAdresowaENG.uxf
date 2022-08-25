@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>440</y>
+      <w>396</w>
+      <h>385</h>
+    </coordinates>
+    <panel_attributes>AddressBook
+--
+- userManager: UserManager
+- recipientManager: RecipientManager
+- RECIPIENTS_FILE_NAME: const string
+--
++ AddressBook()
++ ~AddressBook()
++ signUpUser(): void
++ showAllUsers(): void
++ signInUser(): void
++ signOutUser():void
++ changePassword(): void
++ chooseFromMainMenu(): char
++ chooseFromUserMenu(): char
++ addRecipient(): void
++ showAllRecipientsOfSignedInUser(): void
++ isUserSignedIn():bool
++ searchRecipientsByName(): void
++ searchRecipientsBySurname(): void
++ deleteRecipient(): void
++ editRecipient(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>231</y>
+      <w>484</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>UserManager
+--
+- signedInUserID: int
+- users: vector&lt;User&gt;
+- userFile: UserFile
+--
++ UserManager();
++ singUpUser(): void
++ showAllUsers(): void
+- typeNewUserData(): User
+- getNewUserID(): int
+- isThereTheName: Bool
++ signInUser(): int
++ signOutUser(): void
++ changeSignedInUserPassword(): void
++ getSignedInUserID(): void
++ setSignedInUserID(): int
++ isUserSignedIn(): bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>913</x>
+      <y>1210</y>
+      <w>209</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>Recipient
+--
+- recipentID: int
+- userID: int
+- name: string
+- surname: string
+- phoneNumber: string
+- email: string
+- address: string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1089</x>
+      <y>792</y>
+      <w>374</w>
+      <h>341</h>
+    </coordinates>
+    <panel_attributes>RecipientFile
+--
+- lastRecipientID: int 
+- recipientsTemporaryFileName: string
+--
++ RecipientFile()
+- replaceRecipientDataWithDataLinesSeparatedByVerticalLines(): string
++ getRecipientsOfSignedInUserFromFile(): vector &lt;Recipient&gt;
++ addRecipientToFile(): bool
+- getRecipientIDFromDataLinesSeparatedByVerticalLines(): int
+- getUserIDFromDataLinesSeparatedByVerticalLines(): int 
+- getRecipientData(): Recipient
+- deleteFile(): void
+- changeFileName(): void
++ getLastRecipientID(): int
++ deleteChosenLineFromFile(): void
++ getLastRecipientIDFromFile(): void
++ updateChosenRecipientData():void
++ editChosenLineInFile(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1232</x>
+      <y>594</y>
+      <w>286</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>AuxiliaryMethod
+--
+--
++ convertIntToString(): string
++ typeLine(): string
++ replaceFirstLetterUppercaseTheRestLowercase(): string
++ convertStringToInt(): int
++ typeChar(): char
++ typeFigure():string
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>473</x>
+      <y>737</y>
+      <w>495</w>
+      <h>396</h>
+    </coordinates>
+    <panel_attributes>RecipientManager
+--
+- SIGNED_IN_USER_ID:const int
+- recipients: vector&lt;Recipient&gt;
+- recipientFile: RecipientFile
+--
++ RecipientManager()
++ addRecipient(): void
+- typeNewRecipientData(): Recipient
++ showAllRecipients(): void
+- showRecipientData(): void
+- showNumberOfSearchedRecipients(): void
+- typeChosenRecipientID(): int
+- chooseFromEditMenu(): char
+- getLastRecipientIDAfterDeletingChoosenRecipient(): void
++ searchRecipientsByName(): void
++ searchRecipientsBySurname(): void
++ editRecipient(): void
++ deleteRecipient(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>946</x>
+      <y>0</y>
+      <w>176</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>Users
+--
+- userID: int
+- name: string
+- password: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1078</x>
+      <y>286</y>
+      <w>374</w>
+      <h>275</h>
+    </coordinates>
+    <panel_attributes>UserFile
+--
+--
++ UserFile()
++ addUserToFile(): void
++ loadUsersFromFile(): void
+- replaceUserDataWithDataLinesSeparatedByVerticalLines(): string
+- getUserData(): User
++ saveAllUsersToFile(): void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>484</y>
+      <w>132</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>957</x>
+      <y>913</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=none</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>451</y>
+      <w>132</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=none</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>385</x>
+      <y>682</y>
+      <w>110</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1562</x>
+      <y>605</y>
+      <w>176</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>TextFile
+--
+FILE_NAME: const string 
+--
++ TextFile()
++ getFileName(): string
++ isFileEmpty(): bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1441</x>
+      <y>506</y>
+      <w>231</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1452</x>
+      <y>748</y>
+      <w>187</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>957</x>
+      <y>132</y>
+      <w>33</w>
+      <h>121</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>1122</y>
+      <w>33</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1331</x>
+      <y>550</y>
+      <w>33</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>550</y>
+      <w>286</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>957</x>
+      <y>693</y>
+      <w>297</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;250.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1287</x>
+      <y>759</y>
+      <w>33</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1089</x>
+      <y>132</y>
+      <w>33</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1089</x>
+      <y>1122</y>
+      <w>33</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1012</x>
+      <y>627</y>
+      <w>143</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Asocjacja - jeden obiekt wykonuje na rzecz innego określoną usługę
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1122</x>
+      <y>154</y>
+      <w>242</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Zależność - obiekt danej klasy chwilowo wykorzystuje obiekt innej klasy. Nie występuje na liście składowej klasy, która go wykorzystuje
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>209</x>
+      <y>330</y>
+      <w>209</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Agregacja częściowa - obiekt danej klasy występuje wśród składowych drugiej klasy
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>154</x>
+      <y>847</y>
+      <w>319</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Agregacja całkowita (kompozycja) - obiekt danej klasy występuje wśród elementów składowych drugiej klasy i jest tworzony dynamicznie za pomocą operatora new
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1540</x>
+      <y>495</y>
+      <w>187</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Dziedziczenie - 'chyba bez komentarza'
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
